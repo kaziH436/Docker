@@ -33,8 +33,22 @@ Virtual Machines
 - It virtualizes the application layer and OS kernel 
 
 - Advantages of Docker
-- size of docker images is smaller so faster
-- Docker desktop is for windows and mac to run linux containers using a hypervisor 
+  - size of docker images is smaller so faster
+  - Docker desktop is for windows and mac to run linux containers using a hypervisor 
 
 - Disadvantages of Docker
-- not possible to run a linux docker image on a windows kernel
+  - not possible to run a linux docker image on a windows kernel
+ 
+## Images and container 
+- image is an executable application artifact
+- Container is an running instance of an image
+
+### Image Versioning 
+a new docker image is created using tags in the docker hub website 
+
+## Docker Registry
+- dockerhub: storage of docker images
+
+## Ports 
+
+
