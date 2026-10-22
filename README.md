@@ -48,7 +48,17 @@ a new docker image is created using tags in the docker hub website
 
 ## Docker Registry
 - dockerhub: storage of docker images
+- each registry can have multiple repositories
 
-## Ports 
+## Port Binding (-p 9000) 
+Application inside container runs in an isolated Docker network. 
+The container port needs to be exposed to the host by port binding 
+e.g. ngix is port 80 in docker but that won't be available local host
 
-
+## How to create docker images 
+1. definition of how to build an image
+  - There is a base image using `FROM`
+  - `COPY` src /app/
+  - `WORKDIR` /app
+  - `RUN` to install dependencies
+  - `CMD` ['node','server.js']
